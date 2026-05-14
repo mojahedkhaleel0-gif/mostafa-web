@@ -1,50 +1,244 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8">
-  <title>Privacy Policy – NBR accountant App</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Privacy Policy for NBR accountant App">
+  <meta charset="UTF-8" />
+  <title>NBR accountant — Privacy Policy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Privacy Policy for NBR accountant by Renad Software." />
   <style>
-    body { font-family: Arial, sans-serif; line-height: 1.9; margin: 40px; }
-    h1, h2 { color: #2c3e50; }
-    ul { padding-left: 20px; }
-    a { color: #0066cc; text-decoration: none; }
+    :root {
+      --bg: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --primary: #2563eb;
+      --border: #e5e7eb;
+      --card: #f9fafb;
+    }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.75;
+    }
+    header {
+      padding: 28px 16px;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, #f8fbff, #ffffff);
+    }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+    h1 { margin: 0 0 6px 0; font-size: 28px; }
+    h2 { margin-top: 26px; }
+    h3 { margin-top: 18px; }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .meta { color: var(--muted); font-size: 13px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px;
+      margin-top: 12px;
+    }
+    ul { margin: 8px 0 0 18px; }
+    code {
+      background: #eef2ff;
+      border: 1px solid #c7d2fe;
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 0.95em;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      margin-top: 30px;
+      padding: 16px 0;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+    .hr {
+      height: 1px;
+      background: var(--border);
+      margin: 16px 0;
+    }
   </style>
 </head>
 <body>
-  <h1>Privacy Policy</h1>
-  <p>Last updated: December 2025</p>
-  <h2>Introduction</h2>
-  <p>At NBR accountant, we respect the privacy of our users and are committed to protecting their data. This policy explains how we collect, use, and protect information when you use the application.</p>
-  <h2>Information We Collect</h2>
-  <p>The application collects the minimum information necessary to provide the core service, including:</p>
-  <ul>
-    <li>User identification data such as email address or phone number (when required for activation).</li>
-    <li>Data and records entered by the user within the application.</li>
-    <li>Backup files created automatically to protect your data.</li>
-  </ul>
-  <h2>How We Use Information</h2>
-  <p>Data is used solely for:</p>
-  <ul>
-    <li>Activating the application and linking it to the user's account.</li>
-    <li>Providing backup and restore services.</li>
-    <li>Improving application performance and ensuring its stability.</li>
-  </ul>
-  <p>We do not use user data for advertising, tracking, or marketing analytics purposes.</p>
-  <h2>Data Storage and Security</h2>
-  <p>Data is stored using secure and encrypted cloud storage services. We take reasonable measures to protect data from unauthorized access, modification, or loss.</p>
-  <h2>Data Sharing</h2>
-  <p>We do not sell, rent, or share user data with any third parties. External services may be used solely to provide cloud storage without accessing the content of your data.</p>
-  <h2>Data Deletion</h2>
-  <p>Users can delete their data at any time by removing the stored backups or by contacting the developer to request deletion of data associated with their account.</p>
-  <h2>Children's Privacy</h2>
-  <p>The application is not intended for children under the age of 18, and we do not knowingly collect personal information from children.</p>
-  <h2>Changes to the Privacy Policy</h2>
-  <p>We may update the privacy policy from time to time. Any changes will be published on this page with an updated revision date.</p>
-  <h2>Contact Information</h2>
-  <p>If you have any questions about this privacy policy, please contact us at:</p>
-  <p><a href="mailto:renadsofteware@gmail.com">renadsofteware@gmail.com</a></p>
-  <p>© 2025 All rights reserved – Renad Software</p>
+  <header>
+    <div class="container">
+      <h1>Privacy Policy</h1>
+      <div class="meta">
+        App: <strong>NBR accountant</strong> — Developer: <strong>Renad Software</strong><br />
+        Support: <a href="mailto:renadsoftware@gmail.com">renadsoftware@gmail.com</a><br />
+        Last updated: <strong>2026-05-14</strong>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <p>
+        This Privacy Policy explains how <strong>Renad Software</strong> (“we”, “us”, “our”) handles information when you use
+        <strong>NBR accountant</strong> (the “App”).
+      </p>
+      <p>
+        The App is designed to be <strong>local-first</strong>: most accounting data you enter (such as invoices, payments, and records)
+        is stored on your device. Some features are optional and may involve network services (for example, Google Drive backup/restore).
+      </p>
+    </div>
+
+    <h2>1) Information we handle</h2>
+
+    <h3>A. Information you enter (business/accounting data)</h3>
+    <div class="card">
+      <p>The App may process and store locally on your device:</p>
+      <ul>
+        <li>Invoices, credit notes/returns, items, quantities, prices, discounts, taxes</li>
+        <li>Payments, receipts/advances, allocations, write-offs</li>
+        <li>Customers/suppliers (names, contact details if you choose to enter them)</li>
+        <li>Company profile data you configure (company name, logo, tax number, address)</li>
+        <li>Reports and statements generated inside the App</li>
+      </ul>
+    </div>
+
+    <h3>B. Google account information (only if you use Google Sign-In)</h3>
+    <div class="card">
+      <p>
+        If you choose to enable cloud backup/restore, the App may use Google Sign-In and access limited Google account information such as:
+      </p>
+      <ul>
+        <li>Email address</li>
+        <li>Google account identifier</li>
+      </ul>
+      <p class="meta">
+        The App requests access for Google Drive <code>AppData</code> storage to back up and restore your app data (when enabled).
+      </p>
+    </div>
+
+    <h3>C. Camera input (only when you choose to scan)</h3>
+    <div class="card">
+      <p>
+        The App may use your device camera for optional scanning features such as OCR (text recognition) and barcode scanning.
+        Camera data is used to help you capture information and speed up data entry.
+      </p>
+    </div>
+
+    <h3>D. Notifications</h3>
+    <div class="card">
+      <p>
+        The App may send notifications for reminders (e.g., due invoices, payment reminders) if you enable notifications
+        and grant the relevant permission on your device.
+      </p>
+    </div>
+
+    <h2>2) How we use information</h2>
+    <div class="card">
+      <p>We use information to:</p>
+      <ul>
+        <li>Provide core accounting functions (invoices, payments, statements, reports)</li>
+        <li>Calculate totals, taxes, and balances based on your entries and settings</li>
+        <li>Provide reminders and notifications (optional)</li>
+        <li>Back up and restore app data to Google Drive AppData (optional, user-controlled)</li>
+        <li>Improve app stability (e.g., to diagnose errors if you report issues to support)</li>
+      </ul>
+    </div>
+
+    <h2>3) Data storage and where your data lives</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Local storage:</strong> By default, your accounting data is stored on your device.</li>
+        <li>
+          <strong>Cloud backup (optional):</strong> If you enable Google Drive backup, the App may upload backup data to your
+          Google Drive <code>AppData</code> area. This area is intended for app-specific backups.
+        </li>
+      </ul>
+    </div>
+
+    <h2>4) Sharing of data</h2>
+    <div class="card">
+      <p>
+        We do not sell your personal data. The App may interact with third-party services only to provide specific features you enable:
+      </p>
+      <ul>
+        <li><strong>Google services</strong> (Google Sign-In and Google Drive AppData for backup/restore, if enabled)</li>
+        <li><strong>Google Play services</strong> used by on-device ML features (for example, model delivery for scanning, depending on device configuration)</li>
+      </ul>
+      <p class="meta">
+        These services process data under their own policies. You can review Google’s privacy information here:
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a>
+      </p>
+    </div>
+
+    <h2>5) Permissions</h2>
+    <div class="card">
+      <p>The App may request the following permissions:</p>
+      <ul>
+        <li><strong>Camera</strong>: used only for scanning features when you choose to scan.</li>
+        <li><strong>Notifications</strong>: used to send reminders when enabled.</li>
+        <li><strong>Internet / Network state</strong>: used for Google Sign-In, backup/restore, and related online features.</li>
+      </ul>
+      <p>
+        You can deny permissions; some features may not work without them, but core local features may still be available.
+      </p>
+    </div>
+
+    <h2>6) Data retention</h2>
+    <div class="card">
+      <ul>
+        <li><strong>On-device:</strong> Data remains on your device until you delete it from within the App or uninstall the App.</li>
+        <li><strong>Google Drive backups (if enabled):</strong> Backups remain in your Google Drive AppData until you delete them via the App’s backup settings or your Google account tools (as applicable).</li>
+      </ul>
+    </div>
+
+    <h2>7) Data deletion and export</h2>
+    <div class="card">
+      <p>
+        The App includes options to export and delete your data from within the application settings.
+        If you need assistance, contact support:
+        <a href="mailto:renadsoftware@gmail.com">renadsoftware@gmail.com</a>
+      </p>
+    </div>
+
+    <h2>8) Security</h2>
+    <div class="card">
+      <p>
+        We take reasonable measures to protect data stored and processed by the App. However, no method of storage or transmission is 100% secure.
+        We recommend using device security features (screen lock, biometrics) and keeping your OS updated.
+      </p>
+    </div>
+
+    <h2>9) Children’s privacy</h2>
+    <div class="card">
+      <p>
+        NBR accountant is intended for business/accounting use and is not designed for children.
+        We do not knowingly collect personal information from children.
+      </p>
+    </div>
+
+    <h2>10) Changes to this policy</h2>
+    <div class="card">
+      <p>
+        We may update this Privacy Policy from time to time. We will update the “Last updated” date when changes are made.
+      </p>
+    </div>
+
+    <div class="hr"></div>
+
+    <p class="meta">
+      Back to <a href="./index.html">App Main Page</a>
+    </p>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Renad Software — NBR accountant
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
