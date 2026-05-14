@@ -1,81 +1,192 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8">
-  <title>ريناد للبرمجة والتطوير – الموقع الرسمي</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="الموقع الرسمي لتطبيق مصطفى للمحاسبة لإدارة البيانات بشكل آمن مع النسخ الاحتياطي السحابي.">
+  <meta charset="UTF-8" />
+  <title>NBR accountant — Official Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Official page for NBR accountant by Renad Software. Manage invoices, payments, reports, reminders, and optional cloud backup." />
   <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --primary: #2563eb;
+      --border: #e5e7eb;
+      --card: #f9fafb;
+    }
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.8;
-      margin: 40px;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
     }
-    h1, h2 {
-      color: #2c3e50;
+    header {
+      padding: 32px 16px;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, #f8fbff, #ffffff);
     }
-    ol {
-      padding-right: 20px;
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 16px;
     }
-    a {
-      color: #0066cc;
-      text-decoration: none;
+    h1 { margin: 0 0 8px 0; font-size: 32px; }
+    h2 { margin-top: 28px; }
+    p { margin: 10px 0; }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: #fff;
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 10px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px;
+    }
+    ul { margin: 8px 0 0 18px; }
+    footer {
+      border-top: 1px solid var(--border);
+      margin-top: 30px;
+      padding: 16px 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    .small {
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .note {
+      background: #fff7ed;
+      border: 1px solid #fed7aa;
+      color: #7c2d12;
+      border-radius: 12px;
+      padding: 12px 14px;
+      margin-top: 14px;
     }
   </style>
 </head>
 <body>
+  <header>
+    <div class="container">
+      <h1>NBR accountant</h1>
+      <p class="small">
+        Professional accounting and bookkeeping for small businesses — invoices, payments, reports, reminders, and optional cloud backup.
+      </p>
+      <div class="badge">Developer: Renad Software</div>
+    </div>
+  </header>
 
-  <h1>تطبيق مصطفى للمحاسبة</h1>
+  <main class="container">
+    <h2>About the app</h2>
+    <p>
+      NBR accountant is an accounting application designed to help you manage financial records efficiently and securely.
+      The app supports daily workflows such as creating invoices, tracking payments, generating account statements, and reviewing reports.
+    </p>
 
-  <p>
-    تطبيق مصطفى للمحاسبة هو تطبيق مخصص لمساعدة المستخدمين في إدارة سجلاتهم المالية بكفاءة وأمان.
-    يوفر التطبيق ميزة النسخ الاحتياطي والاستعادة عبر السحابة لحماية بيانات المستخدم من الفقدان.
-  </p>
+    <h2>Key features</h2>
+    <div class="grid">
+      <div class="card">
+        <strong>Invoices & returns</strong>
+        <ul>
+          <li>Create customer and supplier invoices</li>
+          <li>Credit notes / returns with optional linkage to original invoices</li>
+          <li>Tax/VAT calculations (when enabled in settings)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <strong>Payments & balances</strong>
+        <ul>
+          <li>Record payments and allocate receipts</li>
+          <li>Handle overpayments as customer/supplier credit (advance)</li>
+          <li>Track outstanding balances</li>
+        </ul>
+      </div>
+      <div class="card">
+        <strong>Reminders & notifications</strong>
+        <ul>
+          <li>Due invoice reminders</li>
+          <li>Payment reminders and smart notifications (optional)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <strong>Scan & capture (optional)</strong>
+        <ul>
+          <li>Barcode scanning and OCR to help with data entry</li>
+          <li>Uses the device camera only when you choose to scan</li>
+        </ul>
+      </div>
+      <div class="card">
+        <strong>Backup & restore (optional)</strong>
+        <ul>
+          <li>Google Drive AppData backup/restore (opt-in)</li>
+          <li>Requires Google Sign-In only if you enable cloud backup</li>
+        </ul>
+      </div>
+      <div class="card">
+        <strong>Data control</strong>
+        <ul>
+          <li>Export and delete data from within the app</li>
+          <li>Local-first storage by default</li>
+        </ul>
+      </div>
+    </div>
 
-  <h2>معلومات المطور</h2>
-  <p>
-    تطوير: <strong>Renad Software</strong><br>
-    بريد الدعم الفني:
-    <a href="mailto:renadsofteware@gmail.com">renadsofteware@gmail.com</a>
-  </p>
+    <div class="note">
+      <strong>Note:</strong>
+      Some features (such as cloud backup, OCR, barcode scanning, and reminders) are optional and can be enabled or disabled in the app settings.
+    </div>
 
-  <h2>الشروط والأحكام</h2>
-  <ol>
-    <li>
-      يتم دفع ثمن كود التفعيل مرة واحدة فقط، وبعد الدفع يصبح التطبيق مفعلًا للمستخدم مدى الحياة.
-    </li>
-    <li>
-      في حال فقدان الهاتف، يتم إرسال نسخة جديدة من التطبيق للمستخدم مجانًا بعد التحقق.
-    </li>
-    <li>
-      عند التفعيل يصبح بريد المستخدم الإلكتروني هو أداة التفعيل الخاصة به، وفي حال فقدان البريد الإلكتروني يُعتبر المستخدم مستخدمًا جديدًا.
-    </li>
-    <li>
-      في حال طلب المستخدم أي تعديلات أو تطويرات إضافية على التطبيق، يتم احتساب تكلفة التعديلات بشكل منفصل.
-    </li>
-    <li>
-      يتم تخصيص التطبيق (الاسم، رقم الهاتف، الشعار) مرة واحدة فقط، وأي تعديل لاحق يتم احتساب تكلفته.
-    </li>
-  </ol>
+    <h2>Support</h2>
+    <p>
+      Developer: <strong>Renad Software</strong><br />
+      Support email: <a href="mailto:renadsoftware@gmail.com">renadsoftware@gmail.com</a>
+    </p>
 
-  <h2>سياسة الخصوصية</h2>
-  <p>
-    يرجى مراجعة سياسة الخصوصية لمعرفة كيفية جمع واستخدام وحماية بيانات المستخدم:
-  </p>
-  <p>
-    <a href="privacy.html">عرض سياسة الخصوصية</a>
-  </p>
+    <h2>Privacy</h2>
+    <p>
+      Please review the Privacy Policy to understand how data is handled:
+      <a href="./privacy.html">View Privacy Policy</a>
+    </p>
+  </main>
 
-  <p>
-    © 2025 جميع الحقوق محفوظة – تطبيق مصطفى للمحاسبة
-  </p>
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="./privacy.html">Privacy Policy</a>
+        <span>•</span>
+        <a href="mailto:renadsoftware@gmail.com">Contact Support</a>
+      </div>
+      <p class="small" style="text-align:center; margin-top: 10px;">
+        © <span id="year"></span> Renad Software — NBR accountant
+      </p>
+    </div>
+  </footer>
 
-  <hr>
-
-  <p style="text-align:center;">
-    <a href="privacy.html">سياسة الخصوصية</a> |
-    <a href="#">الشروط والأحكام</a>
-  </p>
-
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
